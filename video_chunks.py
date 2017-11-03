@@ -74,8 +74,8 @@ def video_chunks_ffpmeg(vid_loc, save_loc, seconds=10):
 
 
 if __name__ == '__main__':
-    for num, i in enumerate(tqdm(open("txt_files/cpg_others.lst", "r"))):
+    for num, i in enumerate(tqdm(open("txt_files/others.lst", "r"))):
         classs = i.split()[1]
         loc = i.split()[0]
-        #video_chuncks(loc, "CPG_VIDEO_CHUNKS/", save_format=".avi", required_time=10, verbose=False)
-        video_chunks_ffpmeg(loc, "CPG_VIDEO_OTHERS_CHUNKS/")
+        #video_chuncks(loc, "VIDEO_CHUNKS/", save_format=".avi", required_time=10, verbose=False)
+        video_chunks_ffpmeg(loc, "VIDEO_OTHERS_CHUNKS/")
